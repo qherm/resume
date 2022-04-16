@@ -1,0 +1,216 @@
+%-------------------------
+% Resume in Latex
+% Author : Sidratul Muntaha Ahmed
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\newcommand{\MYhref}[3][blue]{\href{#2}{\color{#1}{#3}}}%
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+
+
+\begin{center}
+    \textbf{\Huge \scshape Shane Waxler} \\ \vspace{1pt}
+    \small 858-444-7997 $|$ \href{mailto:shanewaxler1@gmail.com}{\underline{email}} $|$ 
+    \href{https://www.linkedin.com/in/shane-waxler-b205891b9/}{\underline{linkedin}} $|$
+    \href{https://github.com/qherm}{\underline{github}} $|$
+    \href{https://www.shanewaxler.com/}{\underline{website}}
+\end{center}
+
+%-----------CAREER-GOALS--------
+\section{Career Objective}
+  Nearly graduated Computer Science student seeking to apply my knowledge of (and learn more about) software development and system scalability. 
+
+  % \resumeSubHeadingListEnd
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {San Francisco State University}{San Francisco, CA}
+      {Bachelor of Science, Major in Computer Science, Minor in Mathematics}{Expected May 2022}
+          \resumeItemListStart
+            \resumeItem{Major/Minor GPA: 3.70}
+        \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Teaching Assistant - CSC 865: Graduate Level Artificial Intelligence}{November 2021 – Present}
+      {SFSU - Computer Science Department}{San Francisco, CA}
+      \resumeItemListStart
+        \resumeItem{Host weekly office hours and online help for class-related material.}
+        \resumeItem{Promptly respond to questions on Slack, Discord, and iLearn regarding help with class material. }
+        \resumeItem{Wrote an \MYhref{https://github.com/qherm/csc865-autograding-tools}{autograder} which grades students' assignments and rigorously checks for plagiarism with MOSS.}
+      \resumeItemListEnd
+      
+      \resumeSubheading
+      {Machine Learning Researcher}{August 2021 -- February 2022}
+      {PeRL at SFSU}{San Francisco, CA}
+      \resumeItemListStart
+      \resumeItem{Assess and predict user perception of robot hands using linear regression. User ratings include fields such as human-likeness, maturity, capability.}
+      \resumeItem{Determine similarities between robot hands based on their perception ratings.}
+      \resumeItem{Gather large amounts of survey data using Amazon Mechanical Turk to train the linear regression model.}
+      \resumeItemListEnd
+      
+      \resumeSubheading
+      {Software Developer}{March 2019 -- August 2020}
+      {Universal Financial Consultants}{San Diego, CA}
+      \resumeItemListStart
+        \resumeItem{Developed an executable Python application to enable user-friendly management of public data for asset allocation models, automating the selection process for improved portfolio performance.}
+        \resumeItem{Wrote an informational website for UFC in HTML, CSS, and Javascript.}
+      \resumeItemListEnd
+      
+      \resumeSubheading
+      {Elementary/Middle School Computer Science Instructor}{August 2021 -- January 2022}
+      {C.R.E.W.}{San Francisco, CA}
+      \resumeItemListStart
+        \resumeItem{Write curriculum to engage and motivate young students in voluntary curriculum.}
+        \resumeItem{Middle school students were taught with Javascript. Elementary school students were taught with Blocks.}
+        \resumeItem{Lead classroom environments with students of varying age and familiarity with programming concepts.}
+      \resumeItemListEnd
+      
+      
+     
+    \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Projects}
+
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{\MYhref{https://github.com/qherm/notuno}{Notuno} - Multiplayer Online Uno Card Game} $|$ \emph{Node, Express, PostgreSQL}}{Sep. 2021 -- Dec. 2021 }
+          \resumeItemListStart
+            \resumeItem{Wrote the backend for an online multiplayer game from scratch using Javascript and SQL.}
+            \resumeItem{Worked as full-time team-lead for a four-person team. Instructed them on working with large codebases.}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{\MYhref{https://github.com/qherm/multithreaded-webserver-java}{Multithreaded Webserver}} $|$ \emph{Java}}{January 2021 -- March 2021}
+          \resumeItemListStart
+            \resumeItem{Wrote a functioning Apache-esque webserver from scratch without the assistance of any HTTP libraries.}
+          \resumeItemListEnd
+         
+
+    \resumeSubHeadingListEnd
+
+
+%
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Python, Javascript, Typescript, Java, C, SQL, HTML/CSS} \\
+     \textbf{Frameworks/Libraries}{: Tensorflow, Keras, NumPy, SymPy, Express.js} \\
+     \textbf{Developer Tools}{: GitHub, Unix, Node.js, MySQL} \\
+     \textbf{Platforms}{: AWS, Amazon Mechanical Turk, Heroku}
+    }}
+ \end{itemize}
+
+
+%-------------------------------------------
+\end{document}
