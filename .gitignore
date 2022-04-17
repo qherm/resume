@@ -1,6 +1,9 @@
 # aws key
 *.pem
 
+# workspace
+*.code-workspace
+
 ## Core latex/pdflatex auxiliary files:
 *.aux
 *.lof
