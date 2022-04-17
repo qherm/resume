@@ -1,5 +1,15 @@
+
+
 .card{
-    margin: 10px;
+    height:100%;
+}
+
+.projects-body{
+    padding: 10px;
+}
+
+.row{
+    margin-bottom:10px;
 }
 
 .resume{
